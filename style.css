@@ -1,8 +1,114 @@
+/* roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* css reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
 }
 
+.max-width {
+    max-width: 1750px;
+}
+
+/* variables */
+:root {
+    --primary-color: #5E3BEE;
+    --bg-shade: #F5FCFF;
+    --heading-color: #282938;
+    --dribble: #E62872;
+    --body: #1C1E53;
+}
+
+
 /* header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 0 auto;
+
+}
+
+.ham {
+    display: none;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--body);
+
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+header button {
+    padding: 13px 18px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
+
+.letter {
+    display: none;
+}
+
+.contact:hover {
+    color: var(--bg-shade);
+    background-color: var(--primary-color);
+}
+
+
+
+/* responsive  */
+
+@media screen and (max-width:800px) {
+
+    /* header section */
+    .ham {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 20px;
+    }
+
+    nav {
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    /* header section */
+    .logo {
+        max-width: 150px;
+    }
+
+    .btnSpan {
+        display: none;
+    }
+
+    .letter {
+        display: block;
+        font-size: 20px;
+
+    }
+
+
+
+
+}
