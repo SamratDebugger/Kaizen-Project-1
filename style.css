@@ -230,6 +230,54 @@ header button {
     }
 }
 
+.cards {
+
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.card {
+    max-width: 420px;
+    width: 100%;
+
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        color: var(--body);
+        line-height: 25px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        border: none;
+        text-decoration: underline;
+
+    }
+
+
+}
+
+.cardImg {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+
+}
+
 /* responsive  */
 
 
