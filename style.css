@@ -203,6 +203,33 @@ header button {
     }
 }
 
+/* portfolio section */
+.portfolio {
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    button {
+        font-size: 17px;
+        color: var(--bg-shade);
+        background-color: var(--dribble);
+        padding: 15px 25px;
+        border: none;
+        border-radius: 10px;
+    }
+}
+
 /* responsive  */
 
 
